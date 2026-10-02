@@ -36,7 +36,7 @@ Needs **JDK 21**.
 ./gradlew build
 ```
 
-Jar lands in `build/libs/mano-0.0.1.jar`.
+Jar lands in `build/libs/mano-0.0.1.jar`. A copy is also in `dist/mano-0.0.1.jar`.
 
 ## Versions
 
