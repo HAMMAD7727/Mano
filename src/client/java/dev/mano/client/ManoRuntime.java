@@ -15,7 +15,7 @@ public final class ManoRuntime {
 		return alive;
 	}
 
-	static void markDestroyed() {
+	public static void markDestroyed() {
 		alive = false;
 		MinecraftClient client = MinecraftClient.getInstance();
 		if (client != null && client.currentScreen instanceof dev.mano.client.ui.ManoScreen) {
