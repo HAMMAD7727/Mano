@@ -54,4 +54,21 @@ jar {
 	from("LICENSE") {
 		rename { "${it}_${project.base.archivesName.get()}" }
 	}
+	manifest {
+		attributes(
+			'Main-Class': 'dev.mano.desktop.ManoLauncher',
+			'Implementation-Title': 'Mano',
+			'Implementation-Version': project.version
+		)
+	}
+}
+
+remapJar {
+	manifest {
+		attributes(
+			'Main-Class': 'dev.mano.desktop.ManoLauncher',
+			'Implementation-Title': 'Mano',
+			'Implementation-Version': project.version
+		)
+	}
 }

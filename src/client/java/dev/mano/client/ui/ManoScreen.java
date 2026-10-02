@@ -177,7 +177,7 @@ public final class ManoScreen extends Screen {
 			}
 		}
 
-		String hint = "esc  close     rshift  toggle";
+		String hint = "esc  close     shift  toggle";
 		context.drawText(this.textRenderer, hint.toUpperCase(Locale.ROOT), x, panelTop + PANEL_H - 22, 0xFF4E5568, false);
 	}
 
@@ -246,7 +246,7 @@ public final class ManoScreen extends Screen {
 
 	@Override
 	public boolean keyPressed(KeyInput input) {
-		if (input.key() == GLFW.GLFW_KEY_RIGHT_SHIFT) {
+		if (input.key() == GLFW.GLFW_KEY_LEFT_SHIFT) {
 			beginClose();
 			return true;
 		}

@@ -9,7 +9,7 @@ public final class ManoKeys {
 	public static final KeyBinding OPEN = KeyBindingHelper.registerKeyBinding(new KeyBinding(
 		"key.mano.open",
 		InputUtil.Type.KEYSYM,
-		GLFW.GLFW_KEY_RIGHT_SHIFT,
+		GLFW.GLFW_KEY_LEFT_SHIFT,
 		KeyBinding.Category.MISC
 	));
 
