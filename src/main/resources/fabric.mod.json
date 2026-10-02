@@ -6,8 +6,8 @@
 	"description": "Mano 0.01 V — Fabric 1.21.11 client shell. Click GUI and self-destruct only.",
 	"authors": ["Hammad"],
 	"contact": {
-		"homepage": "https://github.com/Hammad/Mano",
-		"sources": "https://github.com/Hammad/Mano"
+		"homepage": "https://github.com/HAMMAD7727/Mano",
+		"sources": "https://github.com/HAMMAD7727/Mano"
 	},
 	"license": "MIT",
 	"environment": "client",
