@@ -1,0 +1,15 @@
+.gradle/
+build/
+out/
+run/
+*.iml
+.idea/
+.vscode/
+*.log
+.DS_Store
+bin/
+.classpath
+.project
+.settings/
+*.class
+remap-*.jar

@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "mano",
+	"version": "${version}",
+	"name": "Mano",
+	"description": "Mano 0.01 V — Fabric 1.21.11 client shell. Click GUI and self-destruct only.",
+	"authors": ["Hammad"],
+	"contact": {
+		"homepage": "https://github.com/Hammad/Mano",
+		"sources": "https://github.com/Hammad/Mano"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.mano.client.ManoClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
