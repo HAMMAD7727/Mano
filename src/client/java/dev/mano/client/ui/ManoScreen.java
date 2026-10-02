@@ -3,10 +3,10 @@ package dev.mano.client.ui;
 import dev.mano.Mano;
 import dev.mano.client.ManoRuntime;
 import dev.mano.client.destruct.SelfDestruct;
+import net.minecraft.client.gui.Click;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.input.KeyEvent;
-import net.minecraft.client.input.MouseButtonEvent;
+import net.minecraft.client.input.KeyInput;
 import net.minecraft.text.Text;
 import org.lwjgl.glfw.GLFW;
 
@@ -190,7 +190,7 @@ public final class ManoScreen extends Screen {
 	}
 
 	@Override
-	public boolean mouseClicked(MouseButtonEvent click, boolean doubled) {
+	public boolean mouseClicked(Click click, boolean doubled) {
 		if (!ManoRuntime.isAlive()) {
 			return false;
 		}
@@ -245,7 +245,7 @@ public final class ManoScreen extends Screen {
 	}
 
 	@Override
-	public boolean keyPressed(KeyEvent input) {
+	public boolean keyPressed(KeyInput input) {
 		if (input.key() == GLFW.GLFW_KEY_RIGHT_SHIFT) {
 			beginClose();
 			return true;
